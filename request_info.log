@@ -1,0 +1,1 @@
+[Jun 13 2016 02:09:47.000000 - INFO] effectiveUser=626-513-3359 service=ManagedCustomerService method=get operators={EQUALS: 1} responseTime=302 requestId=00053522bc3e9ef00abc28883203d0ad operations=1 units= server=adwords.google.com isFault=false faultMessage=null

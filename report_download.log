@@ -1,0 +1,18 @@
+[Jun 13 2016 02:09:49.000000 - INFO] POST /api/adwords/reportdownload/v201605 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjAAA53Uc53fxkjhxG-K1G_OpcIhxdja4xfB5eZxTkM54VuYzQ-YnXnFpEXkOTJyCoo
+developerToken: 2-21jasNgw7pWa6RAxgeiw
+clientCustomerId: 6265133359
+Content-Length: 551
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------0c6eeb5c085e6959
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>AdGroupId</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Cost</fields></selector><reportName>Custom ADGROUP_PERFORMANCE_REPORT</reportName><reportType>ADGROUP_PERFORMANCE_REPORT</reportType><dateRangeType>LAST_7_DAYS</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+

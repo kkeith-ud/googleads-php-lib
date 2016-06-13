@@ -1,0 +1,86 @@
+[Jun 13 2016 02:09:47.000000 - INFO] POST /api/adwords/mcm/v201605/ManagedCustomerService HTTP/1.1
+Host: adwords.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.5.20, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 478
+Authorization: Bearer ya29.CjAAA53Uc53fxkjhxG-K1G_OpcIhxdja4xfB5eZxTkM54VuYzQ-YnXnFpEXkOTJyCoo
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://adwords.google.com/api/adwords/cm/v201605" xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201605">
+  <SOAP-ENV:Header>
+    <ns2:RequestHeader>
+      <ns1:clientCustomerId>626-513-3359</ns1:clientCustomerId>
+      <ns1:developerToken>2-21jasNgw7pWa6RAxgeiw</ns1:developerToken>
+      <ns1:userAgent>Thanet Knack [Jerry] (AwApi-PHP/10.0.0, Common-PHP/10.0.0, PHP/5.5.20)</ns1:userAgent>
+    </ns2:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns2:get>
+      <ns2:serviceSelector>
+        <ns1:fields>CustomerId</ns1:fields>
+        <ns1:predicates>
+          <ns1:field>CanManageClients</ns1:field>
+          <ns1:operator>EQUALS</ns1:operator>
+          <ns1:values>false</ns1:values>
+        </ns1:predicates>
+        <ns1:paging>
+          <ns1:startIndex>0</ns1:startIndex>
+          <ns1:numberResults>500</ns1:numberResults>
+        </ns1:paging>
+      </ns2:serviceSelector>
+    </ns2:get>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 200 OK
+X-Google-Netmon-Label: /bns/tg/borg/tg/bns/ads-mcc/mcc-webapi-prod.server/0
+X-Google-Session-Info: COW2tMC1AxAHGgkYASgJMOWkmDtKExgAMAQ6DTEvWlk0ejkwank3OX5aB0oFZW4tVVOIAQE
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 13 Jun 2016 06:09:47 GMT
+Expires: Mon, 13 Jun 2016 06:09:47 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+X-Google-ServerType: adwords-myclientcenter-webapi
+X-Google-GFE-Request-Trace: tli1:443,tla68:9854,/bns/tg/borg/tg/bns/ads-mcc/mcc-webapi-prod.server/0,tla68:9854,tli1:443
+X-Google-GSLB-Service: adwords-myclientcenter-webapi
+X-Google-Backends: /bns/tg/borg/tg/bns/ads-mcc/mcc-webapi-prod.server/0,tla68:9854,/bns/tl/borg/tl/bns/traffic-prod/shared-layer2-gfe/119,tli1:443
+X-Google-DOS-Service-Trace: main:adwords-myclientcenter-webapi,main:ads-frontend-adv-aggregate
+X-Google-Service: adwords-myclientcenter-webapi,ads-frontend-adv-aggregate
+X-Google-GFE-Response-Code-Details-Trace: response_code_set_by_backend,response_code_set_by_backend
+X-Google-GFE-Response-Body-Transformations: chunked
+X-Google-Shellfish-Status: CIgCQEY
+X-Google-GFE-Service-Trace: adwords-myclientcenter-webapi,ads-frontend-adv-aggregate
+Transfer-Encoding: chunked
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ns2:ResponseHeader xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201605" xmlns="https://adwords.google.com/api/adwords/cm/v201605">
+      <requestId>00053522bc3e9ef00abc28883203d0ad</requestId>
+      <serviceName>ManagedCustomerService</serviceName>
+      <methodName>get</methodName>
+      <operations>1</operations>
+      <responseTime>302</responseTime>
+    </ns2:ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <ns2:getResponse xmlns="https://adwords.google.com/api/adwords/cm/v201605" xmlns:ns2="https://adwords.google.com/api/adwords/mcm/v201605">
+      <ns2:rval>
+        <totalNumEntries>1</totalNumEntries>
+        <Page.Type>ManagedCustomerPage</Page.Type>
+        <ns2:entries>
+          <ns2:customerId>6265133359</ns2:customerId>
+        </ns2:entries>
+      </ns2:rval>
+    </ns2:getResponse>
+  </soap:Body>
+</soap:Envelope>
+
